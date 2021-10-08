@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-08T17:26:54 IST" name="API Test Automation Suite" finished-at="2021-10-08T17:27:05 IST" duration-ms="10531">
+    <groups>
+    </groups>
+    <test started-at="2021-10-08T17:26:54 IST" name="Different HTTP Methods Test" finished-at="2021-10-08T17:27:05 IST" duration-ms="10531">
+      <class name="testCases.DeleteMethodTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.DeleteMethodTest@647e447]" started-at="2021-10-08T17:26:54 IST" name="setup" finished-at="2021-10-08T17:26:55 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteMethodTest()[pri:1, instance:testCases.DeleteMethodTest@647e447]" started-at="2021-10-08T17:26:55 IST" name="deleteMethodTest" finished-at="2021-10-08T17:26:58 IST" duration-ms="2459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMethodTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DeleteMethodTest@647e447]" started-at="2021-10-08T17:26:58 IST" name="tearDown" finished-at="2021-10-08T17:26:58 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.DeleteMethodTest -->
+      <class name="testCases.GetMethodTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:26:58 IST" name="setup" finished-at="2021-10-08T17:26:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getMethodResponseTest()[pri:1, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:26:58 IST" name="getMethodResponseTest" finished-at="2021-10-08T17:26:58 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodResponseTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:26:58 IST" name="tearDown" finished-at="2021-10-08T17:26:58 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:02 IST" name="setup" finished-at="2021-10-08T17:27:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getMethodTest()[pri:2, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:02 IST" name="getMethodTest" finished-at="2021-10-08T17:27:02 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:02 IST" name="tearDown" finished-at="2021-10-08T17:27:02 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:03 IST" name="setup" finished-at="2021-10-08T17:27:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getMethodSpecificationBuilderTest()[pri:3, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:03 IST" name="getMethodSpecificationBuilderTest" finished-at="2021-10-08T17:27:03 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodSpecificationBuilderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:03 IST" name="tearDown" finished-at="2021-10-08T17:27:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:04 IST" name="setup" finished-at="2021-10-08T17:27:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getMethodDeserializeTest()[pri:4, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:04 IST" name="getMethodDeserializeTest" finished-at="2021-10-08T17:27:05 IST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodDeserializeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:05 IST" name="tearDown" finished-at="2021-10-08T17:27:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:05 IST" name="setup" finished-at="2021-10-08T17:27:05 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getDownloadFileTest()[pri:5, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:05 IST" name="getDownloadFileTest" finished-at="2021-10-08T17:27:05 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDownloadFileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.GetMethodTest@703580bf]" started-at="2021-10-08T17:27:05 IST" name="tearDown" finished-at="2021-10-08T17:27:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.GetMethodTest -->
+      <class name="testCases.PatchMethodTest">
+        <test-method signature="putMethodTest()[pri:1, instance:testCases.PatchMethodTest@3427b02d]" started-at="2021-10-08T17:27:01 IST" name="putMethodTest" finished-at="2021-10-08T17:27:02 IST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putMethodTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.PatchMethodTest@3427b02d]" started-at="2021-10-08T17:27:01 IST" name="setup" finished-at="2021-10-08T17:27:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PatchMethodTest@3427b02d]" started-at="2021-10-08T17:27:02 IST" name="tearDown" finished-at="2021-10-08T17:27:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PatchMethodTest -->
+      <class name="testCases.PostMethodTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:26:58 IST" name="setup" finished-at="2021-10-08T17:26:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="postMethodTest()[pri:1, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:26:58 IST" name="postMethodTest" finished-at="2021-10-08T17:27:00 IST" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postMethodTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:00 IST" name="tearDown" finished-at="2021-10-08T17:27:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:02 IST" name="setup" finished-at="2021-10-08T17:27:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="postSerializeTest()[pri:2, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:02 IST" name="postSerializeTest" finished-at="2021-10-08T17:27:03 IST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postSerializeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:03 IST" name="tearDown" finished-at="2021-10-08T17:27:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="postFileUploadTest()[pri:3, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:03 IST" name="postFileUploadTest" finished-at="2021-10-08T17:27:04 IST" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postFileUploadTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:03 IST" name="setup" finished-at="2021-10-08T17:27:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PostMethodTest@7ed7259e]" started-at="2021-10-08T17:27:04 IST" name="tearDown" finished-at="2021-10-08T17:27:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PostMethodTest -->
+      <class name="testCases.PutMethodTest">
+        <test-method signature="putMethodTest()[pri:1, instance:testCases.PutMethodTest@28eaa59a]" started-at="2021-10-08T17:27:00 IST" name="putMethodTest" finished-at="2021-10-08T17:27:01 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putMethodTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.PutMethodTest@28eaa59a]" started-at="2021-10-08T17:27:00 IST" name="setup" finished-at="2021-10-08T17:27:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.PutMethodTest@28eaa59a]" started-at="2021-10-08T17:27:01 IST" name="tearDown" finished-at="2021-10-08T17:27:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.PutMethodTest -->
+    </test> <!-- Different HTTP Methods Test -->
+  </suite> <!-- API Test Automation Suite -->
+</testng-results>
