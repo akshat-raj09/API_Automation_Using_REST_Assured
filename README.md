@@ -4,22 +4,34 @@
 
 This Maven Project contains example code for learning API Automation Testing using TestNG + Java with RestAssured Library.
 
+This project is based on ***[Reqres - A freely available REST API.](https://reqres.in)***
+
 ***The Project has following capabilities :-***
 
 **(i)** Java - Maven - TestNG - REST Assured.
 
-**(ii)** Hamcrest Matchers Library.
+**(ii)** *Hamcrest Matchers Library.*
 
-**(iii)** Google Gson Java library (to serialize and deserialize Java objects to JSON).
+**(iii)** *Google Gson Java library* (to serialize Java objects to JSON & deserialize JSON to Java objects).
 
-**(iv)** Apache Log4j2 API for logging purpose.
+**(iv)** *Jackson Java Library* (used at some places serializing & deserializing purpose)
+
+**(v)** *MySql ConnectorJ :* For fetching test data from MySql Database & using that data into test cases using *TestNG @DataProvider* Annotation.
+
+**(vi)** *Apache Log4j2 API* for generating log files.
+
 
 <br />
 
-***The code for GET & POST Call is as follows :-***
+***Below are the HTTP Methods that are automated in this project :-***
 
-- **HTTP GET Call** ---------->> [Link](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/test/java/com/ApiTest/tests/GetRepoTest.java)
-- **HTTP POST Call** ---------->> [Link](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/test/java/com/ApiTest/tests/PostCreateRepo.java)
+- **[HTTP GET Call](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/httpMethods/GetMethod.java)** 
+- **[HTTP POST Call](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/httpMethods/PostMethod.java)**
+- **[HTTP PUT Call](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/httpMethods/PutMethod.java)** 
+- **[HTTP PATCH Call](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/httpMethods/PatchMethod.java)**
+- **[HTTP DELETE Call](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/httpMethods/DeleteMethod.java)**
+- **[POJO JSON Utility](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/utils/PojoJsonUtil.java)** ---------->> Converts POJO to JSON & Vice-versa.
+- **[SQL Utility](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/java/utils/SqlUtil.java)** ---------->> Contains method that fetches test data from MySQL DataBase & converts it into Object Array and another method that executes various updation queries into MySQL DataBase.
 
 <br />
 
@@ -39,9 +51,9 @@ This Maven Project contains example code for learning API Automation Testing usi
   cd API_Testing_Rest_Assured
 ```
 
-- Open Eclipse/IntelliJ IDE. Import the project into Eclipse/IntelliJ IDE & search for [testng.xml](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/testng.xml).
+- Open Eclipse/IntelliJ IDE. Import the project into Eclipse/IntelliJ IDE & search for [testng.xml](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/resources/testng.xml).
 
-- Right Click on [testng.xml](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/testng.xml) ------> Run As ------> TestNG.
+- Right Click on [testng.xml](https://github.com/akshat-raj09/API_Automation_Using_REST_Assured/blob/master/API_Testing_Rest_Assured/src/main/resources/testng.xml) ------> Run As ------> TestNG.
 
 ### Method 2: Run from Command Line (Maven should be installed)
 
@@ -61,12 +73,6 @@ This Maven Project contains example code for learning API Automation Testing usi
 
 ```bash
   mvn clean test
-```
-
-- To generate Allure Report run the following command after test run is complete
-
-```bash
-  allure serve reports
 ```
 
 <br />
