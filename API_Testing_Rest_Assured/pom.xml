@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -13,38 +11,38 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-    	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    	  <aspectj.version>1.9.7</aspectj.version>
-    	  <selenium-version>3.141.59</selenium-version>
-    	  <testng-version>7.4.0</testng-version>
-    	  <ashot-version>1.5.4</ashot-version>
-    	  <allure-testng-version>2.14.0</allure-testng-version>
-    	  <log4j-version>2.14.1</log4j-version>
-    	  <extentreports-version>5.0.8</extentreports-version>
-    	  <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
-  	</properties>
-	
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<aspectj.version>1.9.7</aspectj.version>
+		<selenium-version>3.141.59</selenium-version>
+		<testng-version>7.4.0</testng-version>
+		<ashot-version>1.5.4</ashot-version>
+		<allure-testng-version>2.14.0</allure-testng-version>
+		<log4j-version>2.14.1</log4j-version>
+		<extentreports-version>5.0.8</extentreports-version>
+		<maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+	</properties>
+
 	<build>
 		<plugins>
-		
-		
-			<!-- Build an executable JAR --> 
-		    	<plugin>
-                		<groupId>org.apache.maven.plugins</groupId>
-                		<artifactId>maven-jar-plugin</artifactId>
-                		<version>3.2.0</version>
-                		<configuration>
-                    			<archive>
-                        			<manifest>
-                        				<addClasspath>true</addClasspath>
-            						<classpathPrefix>lib/</classpathPrefix>
-                            				<mainClass>com.screener.qa.testCasesRunnableJAR.TestRunnerJAR</mainClass>
-                        			</manifest>
-                    			</archive>
-                		</configuration>
-            	  	</plugin>
-		
-		
+
+
+			<!-- Build an executable JAR -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>com.screener.qa.testCasesRunnableJAR.TestRunnerJAR</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -54,8 +52,8 @@
 					<target>1.8</target> <!--For JAVA 8 use 1.8 -->
 				</configuration>
 			</plugin>
-			
-			
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -76,8 +74,8 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			
-			
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -90,8 +88,8 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-			
+
+
 		</plugins>
 	</build>
 
@@ -159,7 +157,7 @@
 			<artifactId>gson</artifactId>
 			<version>2.8.8</version>
 		</dependency>
-		
+
 
 	</dependencies>
 
