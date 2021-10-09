@@ -13,9 +13,87 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<log4j-version>2.14.1</log4j-version>
-	</properties>
+    	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	  <aspectj.version>1.9.7</aspectj.version>
+    	  <selenium-version>3.141.59</selenium-version>
+    	  <testng-version>7.4.0</testng-version>
+    	  <ashot-version>1.5.4</ashot-version>
+    	  <allure-testng-version>2.14.0</allure-testng-version>
+    	  <log4j-version>2.14.1</log4j-version>
+    	  <extentreports-version>5.0.8</extentreports-version>
+    	  <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+  	</properties>
+	
+	<build>
+		<plugins>
+		
+		
+			<!-- Build an executable JAR --> 
+		    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                        	<addClasspath>true</addClasspath>
+            				<classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.screener.qa.testCasesRunnableJAR.TestRunnerJAR</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+		
+		
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source> <!--For JAVA 8 use 1.8 -->
+					<target>1.8</target> <!--For JAVA 8 use 1.8 -->
+				</configuration>
+			</plugin>
+			
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven-surefire-plugin-version}</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			
+			
+		</plugins>
+	</build>
 
 	<dependencies>
 
